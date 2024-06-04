@@ -1,5 +1,6 @@
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -8,10 +9,15 @@ body {
 }
 
 header {
-    background: #333;
+    background: linear-gradient(to right, #333, #444);
     color: #fff;
-    padding: 1em 0;
+    padding: 2em 0;
     text-align: center;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 header img {
@@ -19,6 +25,7 @@ header img {
     width: 150px;
     height: 150px;
     object-fit: cover;
+    margin-bottom: 1em;
 }
 
 header h1 {
@@ -31,13 +38,14 @@ header p {
 }
 
 .social-links {
-    margin-top: 0.5em;
+    margin-top: 1em;
 }
 
 .social-links a {
     margin: 0 0.5em;
     color: #fff;
     text-decoration: none;
+    font-size: 1.5em;
 }
 
 main {
@@ -50,6 +58,9 @@ main {
 
 h2 {
     color: #007BFF;
+    margin-top: 0;
+    border-bottom: 2px solid #007BFF;
+    display: inline-block;
 }
 
 ul {
@@ -61,16 +72,51 @@ ul li {
     margin-bottom: 1em;
 }
 
+.project-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
 footer {
     background: #007BFF;
     color: #fff;
     text-align: center;
     padding: 1em 0;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
 
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 footer p {
-    margin: 0.5em 0;
+    margin: 0.2em 0;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 50%;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+}
+
+.scroll-to-top:hover {
+    background: #0056b3;
 }
